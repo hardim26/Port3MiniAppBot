@@ -42,7 +42,7 @@ Before you begin, make sure you have the following installed:
 ## Installation
 You can download the [**repository**](https://github.com/HiddenCodeDevs/Port3MiniAppBot) by cloning it to your system and installing the necessary dependencies:
 ```shell
-git clone https://github.com/HiddenCodeDevs/Port3MiniAppBot.git
+git clone https://github.com/hardim26/Port3MiniAppBot.git
 cd Port3MiniAppBot
 ```
 
