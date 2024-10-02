@@ -137,7 +137,7 @@ class Tapper:
 
                     if not start_command_found:
                         if settings.REF_ID == '':
-                            await self.tg_client.send_message("Port3miniapp_bot", "/start kESn89")
+                            await self.tg_client.send_message("Port3miniapp_bot", "/start tn4AL2")
                         else:
                             await self.tg_client.send_message("Port3miniapp_bot", f"/start {settings.REF_ID}")
                 except (Unauthorized, UserDeactivated, AuthKeyUnregistered):
@@ -350,9 +350,9 @@ class Tapper:
                 if status:
                     logger.success(f'<light-yellow>{self.session_name}</light-yellow> | Successfully upgraded lvl')
 
-                logger.info(f"<light-yellow>{self.session_name}</light-yellow> | Going sleep 1 hour")
-
-                await asyncio.sleep(3600)
+                logger.info(f"<light-yellow>{self.session_name}</light-yellow> | Going sleep 1-5 hour")
+                t = random.randint(3600, 18000)
+                await asyncio.sleep(t)
 
             except InvalidSession as error:
                 raise error
