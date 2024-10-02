@@ -2,7 +2,7 @@
 # Проверка на наличие папки venv
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
-    python3 -m venv venv
+    python3.10 -m venv venv
 fi
 
 echo "Activating virtual environment..."
@@ -35,7 +35,7 @@ git pull
 git stash pop
 
 echo "Starting the bot..."
-python3 main.py
+python3.10 main.py
 
 echo "done"
 echo "PLEASE EDIT .ENV FILE"
